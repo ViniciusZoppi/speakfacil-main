@@ -17,13 +17,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 15px 20px; */
 }
 
 .header,
 .nav-links {
-  display: flex;
-  font-size: 1.2rem;
+font-size: 1.2rem;
 }
 
 .nav-links {
@@ -31,11 +29,9 @@
   justify-content: end;
 }
 
-.nav-links,
-a {
+.nav-links, a {
   text-decoration: none;
-  display: flex;
-  padding-right: 2rem;
+  gap: 3.5em;
 }
 
 a:hover {
@@ -49,91 +45,65 @@ a:hover {
 }
 
 #main {
-  padding: 6rem;
-  display: flex;
-  align-items: left;
-  /* justify-content: space-between;
-    gap: 82px; */
+  padding: 3em 6em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
 }
 
 .content {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  width: 40rem;
+  text-align: left;
+  display: grid;
+  gap: 2em;
+  align-content: center;
+  gap: 4em;
 }
 
 .content__title {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
 }
 
 span {
   color: var(--color-secondary);
 }
 
-.svg {
-  max-width: 30rem;
-}
-
-/* .content__links{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem;
-    border: red 1px solid;
-  }  */
-
-/* .links {
-    border: var(--color-secondary) 2px solid;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    width: 20%;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 700;
-  } */
-
-/* BUTTONS BTN-CONTAINER*/
-
-.btn-container {
+/* BUTTONS BTN-CONTAINER */
+.btn-container{
   display: flex;
-  gap: 3rem;
+  gap: 4em;
 }
 
-button {
-  margin-top: 2rem;
+.btn-container a{
+  color: var(--color-primary);
   font-size: 1.2rem;
-  font-weight: 700;
-  transition: all 300ms ease;
-  width: 15rem;
-  border-radius: 0.8rem;
+  padding: 1em 3em;
+  border-radius: .8em;
 }
 
-.btn-1 {
-  padding: 1.4rem;
-  border: var(--color-secondary) 2px solid;
+.btn-contact{
+  border: var(--color-primary) 2px solid;
 }
 
-.btn-1:hover {
-  background: #ffa092;
-  border: none;
+.btn-speaknow{
+  background-color: var(--color-secondary);
+  /* font-weight: 700; */
 }
 
-.btn-2 {
-  padding: 1.5rem;
-  background: var(--color-secondary);
-  border: none;
-}
-
-.btn-2:hover {
-  background: var(--color-primary);
+.btn-speaknow:hover{
   color: var(--color-third);
 }
 
+/* SVG */
+.svg {
+  display: block;
+  max-width: 40em;
+}
+
+
 footer p {
-  margin-top: 5rem;
-  padding: 24px;
+  /* margin-top: 5rem; */
+  padding: auto;
   color: var(--color-primary);
   font-size: 1.1rem;
   font-weight: 500;
